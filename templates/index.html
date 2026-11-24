@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es" data-theme="light"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ResiTrack · Residencias Profesionales sin filas ni papeles</title>
+<meta name="description" content="Gestión automatizada de Residencias Profesionales. Prototipo de Altiplano Labs con datos simulados.">
+<link rel="icon" href="/static/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+<script>try{var t=localStorage.getItem("rt_theme");if(!t&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)t="dark";document.documentElement.dataset.theme=t||"light"}catch(e){}</script>
+</head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <symbol id="mark" viewBox="0 0 120 120"><circle cx="78" cy="40" r="17" fill="#D9641E"/><path d="M10 92 L34 58 L52 74 L72 50 L110 92 Z" fill="currentColor"/>
+  <circle cx="34" cy="58" r="6" fill="#F4EDE3" stroke="currentColor" stroke-width="3"/><circle cx="52" cy="74" r="6" fill="#F4EDE3" stroke="currentColor" stroke-width="3"/>
+  <circle cx="72" cy="50" r="6" fill="#D9641E" stroke="#F4EDE3" stroke-width="3"/><rect x="10" y="98" width="100" height="6" rx="3" fill="#2E8B6E"/></symbol>
+</defs></svg>
+<div id="chips" aria-hidden="true"></div>
+<a class="skip" href="#app">Ir al contenido</a>
+<header>
+ <a class="logo" href="#/" aria-label="ResiTrack, inicio">
+  <span class="logo-i"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#mark"/></svg></span>
+  <span><b class="wm">Resi<em>Track</em></b><small>RESIDENCIAS PROFESIONALES · ITMATEHUALA</small></span></a>
+ <nav aria-label="Secciones">
+  <a class="tab" data-t="inicio" href="#/">Inicio</a>
+  <a class="tab" data-t="alumno" href="#/alumno">Alumno</a>
+  <a class="tab" data-t="asesor" href="#/asesor">Asesor</a>
+  <a class="tab" data-t="reportes" href="#/reportes">Reportes</a>
+  <button id="theme" type="button" aria-label="Cambiar tema"></button>
+ </nav>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer>
+ <span>Prototipo con <b>datos simulados</b> · ResiTrack por <b>Altiplano Labs</b> · TecNM Campus Matehuala</span>
+ <a href="#/demo" class="demo-link">Panel de demostración</a>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="modal" class="modal" role="dialog" aria-modal="true" hidden><div class="modal-card" id="modal-card"></div></div>
+<script src="/static/app.js"></script>
+</body></html>
